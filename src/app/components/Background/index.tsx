@@ -1,9 +1,9 @@
 import { Container, Image } from './styles';
 import { BackgroundProps } from './types';
 
-const Background = ({ data }: { data: BackgroundProps }) => (
+const Background = ({ image }: BackgroundProps) => (
   <Container>
-    <Image src={data.imageSrc} alt="alt" />
+    <Image src={image.src} alt={image.alt} />
   </Container>
 );
 

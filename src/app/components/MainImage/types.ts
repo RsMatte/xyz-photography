@@ -1,4 +1,9 @@
+type ImageProps = {
+  src: string;
+  alt: string;
+};
+
 export type MainImageProps = {
-  imageSrc: string;
+  image: ImageProps;
   title: string;
 };

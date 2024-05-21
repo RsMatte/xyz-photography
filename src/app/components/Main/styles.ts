@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-`;
-
 export const Title = styled.h1`
   color: white;
   font-family: Tungsten;

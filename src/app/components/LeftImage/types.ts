@@ -1,4 +1,9 @@
+type ImageProps = {
+  src: string;
+  alt: string;
+};
+
 export type LeftImageProps = {
-  title: string;
-  imageSrc: string;
+  image: ImageProps;
+  onClick: () => void;
 };

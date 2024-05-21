@@ -1,10 +1,10 @@
 import { Image } from './styles';
 import { RightImageProps } from './types';
 
-const RightImage = ({ data }: { data: RightImageProps }) => (
-  <>
-    <Image src={data.imageSrc} alt="alt" />
-  </>
+const RightImage = ({ image, onClick }: RightImageProps) => (
+  <button onClick={onClick}>
+    <Image src={image.src} alt={image.alt} />
+  </button>
 );
 
 export default RightImage;

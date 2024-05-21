@@ -2,7 +2,8 @@ import { Container, Cta, DateContainer, Info } from './styles';
 import { DetailsProps } from './types';
 
 const Details = ({ data }: { data: DetailsProps }) => {
-  const { artist, client, date } = data;
+  const { artist, client, date, url } = data;
+  const handleClick = () => console.log(`navigate to ${url}`);
 
   return (
     <Container>
@@ -11,7 +12,7 @@ const Details = ({ data }: { data: DetailsProps }) => {
         <p>{client}</p>
       </Info>
       <DateContainer>{date}</DateContainer>
-      <Cta>Have a look</Cta>
+      <Cta onClick={handleClick}>Have a look</Cta>
     </Container>
   );
 };

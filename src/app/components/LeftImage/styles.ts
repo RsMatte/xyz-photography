@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const Container = styled.button`
+  border: 10px solid black;
+`;
+
 export const Image = styled.img`
   border: 1px solid black;
   border-radius: 10px;

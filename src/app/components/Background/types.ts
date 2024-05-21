@@ -1,4 +1,8 @@
+type ImageProps = {
+  src: string;
+  alt: string;
+};
+
 export type BackgroundProps = {
-  title: string;
-  imageSrc: string;
+  image: ImageProps;
 };

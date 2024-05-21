@@ -1,16 +1,16 @@
 import { Container, Dot, DotContainer, Index } from './styles';
 import { SliderProps } from './types';
 
-const Slider = ({ data }: { data: SliderProps }) => {
+const Slider = ({ screenId, screenCount }: SliderProps) => {
   return (
     <Container>
-      <Index>1 OF 5</Index>
+      <Index>
+        {screenId} OF {screenCount}
+      </Index>
       <DotContainer>
-        <Dot $isActive />
-        <Dot />
-        <Dot />
-        <Dot />
-        <Dot />
+        {Array.from({ length: screenCount }).map((_, index) => (
+          <Dot key={`${index}`} $isActive={index + 1 === screenId} />
+        ))}
       </DotContainer>
     </Container>
   );
