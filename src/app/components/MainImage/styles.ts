@@ -16,13 +16,13 @@ export const StrokedTitle = styled.h2`
   left: 50%;
   letter-spacing: 0.04em;
   line-height: 176px;
-  max-width: 657px;
   position: absolute;
-  top: 50%;
   text-align: center;
   text-transform: uppercase;
   transform: translate(-50%, -50%);
+  top: 50%;
   -webkit-text-stroke: 1px white;
+  width: 900px;
 `;
 
 export const FilledTitle = styled.span`
@@ -33,12 +33,12 @@ export const FilledTitle = styled.span`
   left: 50%;
   letter-spacing: 0.04em;
   line-height: 176px;
-  max-width: 657px;
   position: absolute;
   text-align: center;
   text-transform: uppercase;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 900px;
 `;
 
 export const Image = styled.img`
