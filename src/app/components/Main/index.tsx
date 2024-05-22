@@ -7,6 +7,7 @@ import LeftImage from '../LeftImage';
 import RightImage from '../RightImage';
 import Details from '../Details';
 import Slider from '../Slider';
+import Cursor from '../Cursor';
 
 const Main = () => {
   const {
@@ -27,6 +28,7 @@ const Main = () => {
       <LeftImage image={previousScreenData.image} onClick={handlePrevious} />
       <RightImage image={nextScreenData.image} onClick={handleNext} />
       <Details data={currentData} />
+      <Cursor screenId={currentData.id} screenCount={screenCount} />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './styles/reset.css';
 import './styles/fonts.css';
+import './styles/global.css';
 
 export const metadata: Metadata = {
   title: 'XYZ Photography',
