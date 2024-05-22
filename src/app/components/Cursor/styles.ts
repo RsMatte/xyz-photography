@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
+import { BREAKPOINTS } from '@/app/utils/breakpoints';
+
 export const Container = styled.div`
+  display: block;
   left: 0;
   pointer-events: none;
   position: absolute;
@@ -10,6 +13,10 @@ export const Container = styled.div`
     calc(var(--cursor-y) - 50%)
   );
   z-index: 2;
+
+  ${BREAKPOINTS.medium} {
+    display: none;
+  }
 `;
 
 export const OuterCircle = styled.div`

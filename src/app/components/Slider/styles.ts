@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+
+import { BREAKPOINTS } from '@/app/utils/breakpoints';
 import { DotProps } from './types';
 
 export const Container = styled.div`
@@ -9,6 +11,10 @@ export const Container = styled.div`
   position: fixed;
   top: calc(50% + 180px);
   transform: translate(-50%, -50%);
+
+  ${BREAKPOINTS.medium} {
+    top: calc(50% + 120px);
+  }
 `;
 
 export const Index = styled.span`

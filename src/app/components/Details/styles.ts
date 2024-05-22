@@ -1,3 +1,4 @@
+import { BREAKPOINTS } from '@/app/utils/breakpoints';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -13,6 +14,11 @@ export const Container = styled.div`
   right: 155px;
   text-transform: uppercase;
   width: 109px;
+
+  ${BREAKPOINTS.large} {
+    bottom: 40px;
+    right: 30px;
+  }
 `;
 
 export const Info = styled.div`
