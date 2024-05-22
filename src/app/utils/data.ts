@@ -9,7 +9,7 @@ const pageData = {
       url: 'www.johanna-hobel.com/galery-1',
       image: {
         alt: 'man viewed from behind',
-        src: 'image01.jpg',
+        src: 'image01',
       },
     },
     {
@@ -21,7 +21,7 @@ const pageData = {
       url: 'www.johanna-hobel.com/galery-2',
       image: {
         alt: 'woman covered in mud',
-        src: 'image02.jpg',
+        src: 'image02',
       },
     },
     {
@@ -33,7 +33,7 @@ const pageData = {
       url: 'www.johanna-hobel.com/galery-3',
       image: {
         alt: 'close view of a lama',
-        src: 'image03.jpg',
+        src: 'image03',
       },
     },
     {
@@ -45,7 +45,7 @@ const pageData = {
       url: 'www.johanna-hobel.com/galery-4',
       image: {
         alt: 'blury lights',
-        src: 'image04.jpg',
+        src: 'image04',
       },
     },
     {
@@ -57,7 +57,7 @@ const pageData = {
       url: 'www.johanna-hobel.com/galery-5',
       image: {
         alt: 'black and white curtain',
-        src: 'image05.jpg',
+        src: 'image05',
       },
     },
   ],

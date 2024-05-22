@@ -9,7 +9,7 @@ const MainImage = ({ data }: { data: MainImageProps }) => {
       <StrokedTitle>{title}</StrokedTitle>
       <Container>
         <FilledTitle>{title}</FilledTitle>
-        <Image src={image.src} alt={image.alt} />
+        <Image src={`${image.src}@2x.jpg`} alt={image.alt} />
       </Container>
     </>
   );
