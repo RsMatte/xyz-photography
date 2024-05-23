@@ -1,10 +1,9 @@
 import useSlide from '@/app/hooks/useSlide';
 
-import MainImage from '../MainImage';
 import { Title } from './styles';
+import MainImage from '../MainImage';
 import Background from '../Background';
-import LeftImage from '../LeftImage';
-import RightImage from '../RightImage';
+import SideImage from '../SideImage';
 import Details from '../Details';
 import Slider from '../Slider';
 import Cursor from '../Cursor';
@@ -25,11 +24,17 @@ const Main = () => {
       <Background image={currentData.image} id={currentData.id} />
       <MainImage data={currentData} />
       <Slider screenId={currentData.id} screenCount={screenCount} />
-      <LeftImage image={previousScreenData.image} onClick={handlePrevious} />
-      <RightImage
+      <SideImage
+        image={previousScreenData.image}
+        id={`previous-img-${previousScreenData.id}`}
+        onClick={handlePrevious}
+        position="left"
+      />
+      <SideImage
         image={nextScreenData.image}
-        id={`next-image-${nextScreenData.id}`}
+        id={`next-img-${nextScreenData.id}`}
         onClick={handleNext}
+        position="right"
       />
       <Details data={currentData} />
       <Cursor screenId={currentData.id} screenCount={screenCount} />

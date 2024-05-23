@@ -2,13 +2,14 @@ import { AnimatePresence } from 'framer-motion';
 
 import { SideImageParams } from '@/app/utils/animations';
 import { Container, Image } from './styles';
-import { RightImageProps } from './types';
+import { SideImageProps } from './types';
 
-const RightImage = ({ image, id, onClick }: RightImageProps) => (
+const SideImage = ({ image, id, position, onClick }: SideImageProps) => (
   <AnimatePresence>
     <Container
-      onClick={onClick}
       key={id}
+      onClick={onClick}
+      $position={position}
       initial={SideImageParams.initial}
       animate={SideImageParams.animate}
       exit={SideImageParams.exit}
@@ -22,4 +23,4 @@ const RightImage = ({ image, id, onClick }: RightImageProps) => (
   </AnimatePresence>
 );
 
-export default RightImage;
+export default SideImage;
