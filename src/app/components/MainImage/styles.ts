@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled, { css } from 'styled-components';
 
 import { BREAKPOINTS } from '@/app/utils/breakpoints';
@@ -36,14 +37,20 @@ const TitleStyle = css`
 `;
 
 export const Container = styled.div`
-  left: 50%;
+  display: grid;
   overflow: hidden;
-  position: fixed;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  place-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
 `;
 
-export const StrokedTitle = styled.h2`
+export const ImageContainer = styled(motion.div)`
+  overflow: hidden;
+  position: absolute;
+`;
+
+export const StrokedTitle = styled(motion.h2)`
   color: transparent;
   -webkit-text-stroke: 1px white;
 

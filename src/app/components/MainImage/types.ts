@@ -4,6 +4,7 @@ type ImageProps = {
 };
 
 export type MainImageProps = {
+  id: number;
   image: ImageProps;
   title: string;
 };

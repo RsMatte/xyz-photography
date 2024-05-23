@@ -48,6 +48,7 @@ h6 {
 }
 
 button {
+  border: none;
   cursor: none;
   padding: 0;
   line-height: inherit;
@@ -67,6 +68,5 @@ object {
 
 img,
 video {
-  max-width: 100%;
   height: auto;
 }

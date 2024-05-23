@@ -4,6 +4,7 @@ type ImageProps = {
 };
 
 export type RightImageProps = {
+  id: string;
   image: ImageProps;
   onClick: () => void;
 };

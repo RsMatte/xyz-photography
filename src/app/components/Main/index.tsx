@@ -22,11 +22,15 @@ const Main = () => {
   return (
     <>
       <Title>XYZ Photography</Title>
-      <Background image={currentData.image} />
+      <Background image={currentData.image} id={currentData.id} />
       <MainImage data={currentData} />
       <Slider screenId={currentData.id} screenCount={screenCount} />
       <LeftImage image={previousScreenData.image} onClick={handlePrevious} />
-      <RightImage image={nextScreenData.image} onClick={handleNext} />
+      <RightImage
+        image={nextScreenData.image}
+        id={`next-image-${nextScreenData.id}`}
+        onClick={handleNext}
+      />
       <Details data={currentData} />
       <Cursor screenId={currentData.id} screenCount={screenCount} />
     </>

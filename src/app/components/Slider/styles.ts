@@ -15,6 +15,10 @@ export const Container = styled.div`
   ${BREAKPOINTS.medium} {
     top: calc(50% + 120px);
   }
+
+  ${BREAKPOINTS.small} {
+    top: calc(50% + 160px);
+  }
 `;
 
 export const Index = styled.span`

@@ -4,5 +4,6 @@ type ImageProps = {
 };
 
 export type BackgroundProps = {
+  id: number;
   image: ImageProps;
 };
