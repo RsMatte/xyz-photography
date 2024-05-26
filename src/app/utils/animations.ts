@@ -2,21 +2,21 @@ export const SideImageParams = {
   initial: {
     opacity: 0.2,
     transition: {
-      duration: 1,
+      duration: 0.6,
       ease: 'easeInOut',
     },
   },
   animate: {
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.6,
       ease: 'easeInOut',
     },
   },
   exit: {
     opacity: 0.2,
     transition: {
-      duration: 1,
+      duration: 0.6,
       ease: 'easeInOut',
     },
   },
